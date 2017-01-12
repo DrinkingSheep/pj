@@ -52,9 +52,9 @@ DS1302RTC RTC(2, 3, 4);
      
 #define SSID "apple"  //공유기 SSID
 #define PASS "12345678"   //공유기 비번
-#define DST_IP "192.168.0.3"   //MYSQL 서버 주소 
+#define DST_IP "192.168.0.9"   //MYSQL 서버 주소 
 
-SoftwareSerial dbgSerial(6, 7); // esp8266의 RX, TX 를 각각 아두이노의 6번,7번핀(변경가능?) dbgserial은 소프트웨어시리얼로 선언된것일뿐임.
+SoftwareSerial dbgSerial(6, 7); // esp8266의 RX, TX 를 각각 아두이노의 7번,6번핀(변경가능?) dbgserial은 소프트웨어시리얼로 선언된것일뿐임.
 //esp8266의 serial port.
  
 
@@ -119,7 +119,7 @@ void loop()
        
     char test[20];  
 	
-    String beat(itoa(heartbeat, test, 10);
+    String beat(itoa(heartbeat, test, 10));
 	
 	//(test,tempC, 2, 0));  
       
