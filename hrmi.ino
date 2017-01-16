@@ -123,7 +123,7 @@ void loop()
 	
 	//(test,tempC, 2, 0));  
       
-     cmd = "GET /run.php?temp='"+beat+"\n\r";  //mySQL db에 값 넣기.
+     cmd = "GET /run.php?temp='"+beat+"'\n\r";  //mySQL db에 값 넣기.
      dbgSerial.print("AT+CIPSEND=");   //AT+CIPSEND	Send data
      dbgSerial.println(cmd.length());  
      Serial.println(cmd);  
